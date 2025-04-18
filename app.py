@@ -3,6 +3,9 @@ from PIL import Image
 import torch
 from transformers import BlipProcessor, BlipForConditionalGeneration, AutoTokenizer, AutoModelForCausalLM
 
+st.set_page_config(page_title="Emotional Comment Bot 🎭", layout="centered")
+
+
 # -----------------------------
 # Hugging Face Token (🔐 Required for Mistral)
 # -----------------------------
@@ -69,7 +72,7 @@ Capture the atmosphere and the feeling. Be poetic and engaging. [/INST]"""
 # -----------------------------
 # Streamlit UI
 # -----------------------------
-st.set_page_config(page_title="Emotional Comment Bot 🎭", layout="centered")
+
 st.title("📸 Emotional Comment Generator")
 st.caption("Upload an image + pick an emotion → get an expressive comment ✨")
 
